@@ -101,6 +101,35 @@ body {
     position: relative;
   }
 }
+.fontBold {
+  font-weight: 700;
+}
+.fontNormal {
+  font-weight: 400;
+}
+.ListItem {
+  list-style: none;
+}
+.ListItem a {
+  color: #5C6975;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.ListItem a:hover {
+  color: rgb(116, 76, 188) !important;
+}
+.ListItem .active {
+  color: #663399;
+  border-color: rgb(230,236,241) !important;
+  border-style: solid none solid solid;
+  border-width: 1px 0px 1px 1px;
+  background-color: #fff;
+}
+.ListItem .active svg {
+  float: right;
+  margin-right: 1rem;
+}
 .Code {
   background: #f9f7fb;
   border: 1px solid #ede7f3;
