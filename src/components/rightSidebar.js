@@ -14,8 +14,7 @@ const ListItem = (({ className, active, level, ...props }) => {
         <a style={{padding: `0.45rem 0 0.45rem ${props => 2 + (props.level || 0) * 1}rem`}} className={(level === 0) ? 'fontBold' : 'fontNormal'} href={props.to} {...props} />
       </li>
     );
-})`
-`;
+});
 
 const SidebarLayout = ({ location }) => (
   <StaticQuery
