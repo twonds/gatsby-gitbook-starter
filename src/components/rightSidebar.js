@@ -7,24 +7,6 @@ import config from '../../config';
 
 const forcedNavOrder = config.sidebar.forcedNavOrder;
 
-const Sidebar = styled('aside')`
-  width: 100%;
-  background-color: #fff;
-  border-right: 1px solid #ede7f3;
-  height: 100vh;
-  overflow: auto;
-  position: fixed;
-  padding-left: 24px;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: sticky;
-  top: 0;
-  @media only screen and (max-width: 50rem) {
-    width: 100%;
-    position: relative;
-  }
-`;
-
 // eslint-disable-next-line no-unused-vars
 const ListItem = styled(({ className, active, level, ...props }) => {
     return (
@@ -111,18 +93,18 @@ const SidebarLayout = ({ location }) => (
 
       if (finalNavItems && finalNavItems.length) {
         return (
-          <Sidebar>
+          <aside className={'Sidebar'}>
             <ul className={'rightSideBarUL'}>
               <div className={'rightSideTitle'}>CONTENTS</div>
               {finalNavItems}
             </ul>
-          </Sidebar>
+          </aside>
         );
       } else {
         return (
-          <Sidebar>
+          <aside className={'Sidebar'}>
             <ul></ul>
-          </Sidebar>
+          </aside>
         );
       }
     }}

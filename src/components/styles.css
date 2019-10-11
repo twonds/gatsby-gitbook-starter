@@ -2,7 +2,66 @@
 body {
   font-family: 'Roboto';
 }
-
+.LeftSideBarWidth {
+  width: 298px;
+}
+.RightSideBarWidth {
+  width: 224px;
+}
+.Content {
+  display: flex;
+  flex-grow: 1;
+  margin: 0px 88px;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 1023px) {
+  .Content {
+    padding-left: 0;
+    margin: 0 10px;
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 50rem) {
+  .MaxWidth {
+    width: 100%;
+    position: relative;
+  }
+}
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 767px) {
+  .Wrapper {
+    display: block;
+  }
+}
+.Sidebar {
+  width: 100%;
+  background-color: #fff;
+  border-right: 1px solid #ede7f3;
+  height: 100vh;
+  overflow: auto;
+  position: fixed;
+  padding-left: 24px;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: sticky;
+  top: 0;
+}
+@media only screen and (max-width: 50rem) {
+  .Sidebar {
+    width: 100%;
+    position: relative;
+  }
+}
+.Code {
+  background: #f9f7fb;
+  border: 1px solid #ede7f3;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.9375em;
+}
 .video-responsive {
   position: relative;
   padding-bottom: 56.2%;
