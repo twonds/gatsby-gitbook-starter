@@ -79,7 +79,6 @@ export default class MDXRuntimeTest extends Component {
         siteMetadata: { docsLocation, title }
       }
     } = data;
-    const gitHub = require('../components/images/github.svg');
 
     const navItems = allMdx.edges
       .map(({ node }) => node.fields.slug)
