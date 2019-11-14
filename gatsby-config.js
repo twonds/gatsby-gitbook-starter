@@ -13,7 +13,12 @@ const plugins = [
   'gatsby-plugin-styled-components',
   {
     resolve: 'gatsby-plugin-mdx',
-    options: {
+      options: {
+      // a workaround to solve mdx-remark plugin compat issue
+      // https://github.com/gatsbyjs/gatsby/issues/15486
+      plugins: [
+          `gatsby-remark-images`,
+      ],
       gatsbyRemarkPlugins: [
         {
           resolve: "gatsby-remark-images",
