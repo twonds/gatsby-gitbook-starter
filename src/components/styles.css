@@ -3,10 +3,6 @@ body {
   font-family: 'Roboto';
 }
 
-.gatsby-resp-image-background-image {
-    display: none !important;
-}
-
 .video-responsive {
   position: relative;
   padding-bottom: 56.2%;
